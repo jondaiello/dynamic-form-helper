@@ -2,12 +2,12 @@
 
 There are a few steps to make this work:
 
-1. Add the "isDependent" class to the element.
-2. Add the data attribute to the`<option>`
-3. Name your `<select>` ID
-4. Create your "Details" area
-5. Create your "Content" area
-
+1. Add jQuery to your page
+2. Add the "isDependent" class to the element.
+3. Add the data attribute to the`<option>`
+4. Name your `<select>` ID
+5. Create your "Details" area
+6. Create your "Content" area
 
 ## Step 1: The `<select>` Class
 

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>Basic Example</title>
+  <link href="assets/style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="content-width">
+
+
+    <h1>Basic Example</h1>
+
+    <!-- use the form like you normally would -->
+    <form>
+      <h3>Dynamic Form Elements</h3>
+
+      <div class="form-field">
+  			<label><span class="req">* </span>Does this field have dependent content?</label>
+  			<select id="test" name="test" class="required isDependent">
+  				<option>Please Select</option>
+  				<option value="Yes" data-show-dependent-relative="true">Yes</option>
+  				<option value="No">No</option>
+  			</select>
+    	</div><!-- .form-field -->
+
+      <div id="testDetails">
+    		<!-- this is where the content will display -->
+    	</div>
+
+    </form>
+
+    <!-- ######################################################################### -->
+
+    <div id="conditionalFormSections" style="display:none;width:0;height:0;overflow:hidden;">
+      <!-- this lives OUTSIDE the <form> element -->
+      <div id="testDetailsContent">
+        <p class="ex-dynamic-content">This is the content inside of the <strong>id="testDetailsContent"</strong> div. It will display if you select yes. It can go on for a long time, or maybe just a few words.</p>
+      </div>
+
+    </div><!-- .conditionalFormSections -->
+
+  </div><!-- .content-width -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="../dist/dynamic-form-helper.js"></script>
+</body>
+</html>

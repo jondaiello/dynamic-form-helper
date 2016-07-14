@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <title>Example Form</title>
+  <link href="assets/style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="content-width">
+
+
+    <h1>Example Form</h1>
+
+    <!-- use the form like you normally would -->
+    <form>
+      <h3>Multiple <u>Unique</u> Elements At Once</h3>
+
+      <div class="form-field">
+  			<label><span class="req">* </span>How many unique paragraphs do you want?</label>
+  			<select id="test" name="test" class="required isDependent">
+  				<option>Please Select</option>
+  				<option value="1" data-show-dependent-by-id="#paragraph1">1</option>
+          <option value="2" data-show-dependents-by-id="#paragraph1, #paragraph2">2</option>
+          <option value="3" data-show-dependents-by-id="#paragraph1, #paragraph2, #paragraph3">3</option>
+          <option value="4" data-show-dependents-by-id="#paragraph1, #paragraph2, #paragraph3, #paragraph4">4</option>
+  			</select>
+    	</div><!-- .form-field -->
+
+      <div id="testDetails">
+    		<!-- this is where the content will display -->
+    	</div>
+
+    </form>
+
+    <!-- ######################################################################### -->
+
+    <div id="conditionalFormSections" style="display:none;width:0;height:0;overflow:hidden;">
+      <!-- this lives OUTSIDE the <form> element -->
+      <div id="paragraph1">
+        <p>This is the first paragraph.</p>
+      </div>
+      <div id="paragraph2">
+        <p>This is the second paragraph.</p>
+      </div>
+      <div id="paragraph3">
+        <p>This is the third paragraph.</p>
+      </div>
+      <div id="paragraph4">
+        <p>This is the fourth paragraph.</p>
+      </div>
+
+    </div><!-- .conditionalFormSections -->
+
+  </div><!-- .content-width -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="../dist/dynamic-form-helper.js"></script>
+</body>
+</html>

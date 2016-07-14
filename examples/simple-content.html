@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <title>Content Example</title>
+  <link href="assets/style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="content-width">
+    <h1>Content Example</h1>
+    <form>
+      <div class="field-group">
+        <h3>Static Elements</h3>
+        <div class="field-row">
+      		<div class="form-field w50"><label><span class="req">* </span>First Name</label><input type="text" name="fname" class="required" /></div>
+      		<div class="form-field w50"><label><span class="req">* </span>Last Name</label><input type="text" name="lname" class="required" /></div>
+      	</div><!-- .field-row -->
+        <div class="field-row">
+      		<div class="form-field"><label><span class="req">* </span>Email</label><input type="text" name="email" class="required" placeholder="person@example.com" /></div>
+      	</div><!-- .field-row -->
+        <div class="field-row">
+          <div class="form-field w25"><label><span class="req">* </span>Date of Birth</label><input type="text" name="rmwebsvc_bdate" class="date required" placeholder="MM/DD/YYYY" /></div>
+      		<div class="form-field w25"><label><span class="req">* </span>SS #</label><input type="text" name="rmwebsvc_ssn" class="ssn required" placeholder="ex. 123-45-6789"></div>
+      		<div class="form-field w25"><label><span class="req">* </span>Driver's Lic #</label><input type="text" name="rmwebsvc_eudf_Drivers_License_or_ID_No_0" class="required"></div>
+        </div><!-- .field-row -->
+      </div>
+      <div class="field-group">
+        <h3>Dynamic Form Elements</h3>
+        <div class="field-row">
+      		<div class="form-field w50">
+      			<label><span class="req">* </span>Does this field have dependent content?</label>
+      			<select id="test" name="test" class="required isDependent">
+      				<option>Please Select</option>
+      				<option value="Yes" data-show-dependent-relative="true">Yes</option>
+      				<option value="No">No</option>
+      			</select>
+      		</div>
+      	</div><!-- .field-row -->
+        <div id="testDetails">
+      		<!-- this is where the content will display -->
+      	</div>
+      </div><!-- .field-group -->
+    </form>
+    <div id="conditionalFormSections" style="display:none;width:0;height:0;overflow:hidden;">
+      <!-- this lives OUTSIDE the <form> element -->
+      <div id="testDetailsContent">
+        <p class="ex-dynamic-content">This content will display if you select yes.</p>
+      </div>
+    </div><!-- .conditionalFormSections -->
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="../dist/dynamic-form-helper.js"></script>
+</body>
+</html>

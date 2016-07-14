@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <title>Example Form</title>
+  <link href="assets/style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="content-width">
+
+
+    <h1>Example Form</h1>
+
+    <!-- use the form like you normally would -->
+    <form>
+      <h3>Multiple Instances Unique Elements</h3>
+
+      <div class="form-field">
+  			<label><span class="req">* </span>Does this field have dependent content?</label>
+  			<select id="test" name="test" class="required isDependent">
+  				<option>Please Select</option>
+  				<option value="married" data-show-dependent-by-id="#marriedContent">Married</option>
+  				<option value="single" data-show-dependent-by-id="#singleContent">Single</option>
+          <option value="no comment">No Comment.</option>
+  			</select>
+    	</div><!-- .form-field -->
+
+      <div id="testDetails">
+    		<!-- this is where the content will display -->
+    	</div>
+
+    </form>
+
+    <!-- ######################################################################### -->
+
+    <div id="conditionalFormSections" style="display:none;width:0;height:0;overflow:hidden;">
+      <!-- this lives OUTSIDE the <form> element -->
+      <div id="marriedContent">
+        <p class="ex-dynamic-content">You are married.</p>
+      </div>
+      <div id="singleContent">
+        <p class="ex-dynamic-content">You are single.</p>
+      </div>
+
+    </div><!-- .conditionalFormSections -->
+
+  </div><!-- .content-width -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="../dist/dynamic-form-helper.js"></script>
+</body>
+</html>
