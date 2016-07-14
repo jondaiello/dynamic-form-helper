@@ -79,15 +79,15 @@ In this case, we'll end up with "testDetailsContent"
 
 ## Examples:
 
-- <a href="form-example.html">Basic Example</a>
-- <a href="form-simple-content.html">Content Example</a>
-- <a href="form-simple-fields.html">Group of Fields Example</a>
+- <a href="example.html">Basic Example</a>
+- <a href="simple-content.html">Content Example</a>
+- <a href="simple-fields.html">Group of Fields Example</a>
 
 ## What about multiple instances?
 
 This allows you to pull specific contents with an ID.
 
-<a href="form-multiple-content.html">View Example</a>
+<a href="multiple-content.html">View Example</a>
 
 Place the following attribute on the options that requires contents to show.
 
@@ -105,7 +105,7 @@ Note: When showing by ID the '#' sign is required at the beginning of the ID nam
 
 This allows you to parse multiple IDs at once.
 
-<a href="form-multiple-ids-at-once.html">View Example</a>
+<a href="multiple-ids-at-once.html">View Example</a>
 
 Place the following attribute on the options that requires contents to show.
 
