@@ -1,0 +1,135 @@
+/* Some Google Fonts for Prettiness */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+pre {
+  background: #eee;
+  padding: 1em 1em .5em;
+}
+
+.highlight {
+  background: yellow;
+  colr: #000;
+}
+
+.content-width {
+  max-width: 95%;
+  margin: 0 auto;
+  width: 960px;
+}
+
+/* Base Form Styles*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="fax"],
+input[type="date"],
+input[type="datetime"],
+input[type="month"],
+input[type="password"],
+input[type="time"],
+input[type="url"],
+select,
+textarea {
+  width: 100%;
+  padding: .5em .7em;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 0; /* be sure to set this, because browsers have their own intentions */
+}
+
+select {
+  cursor: pointer; /* I like it when the hand shows up on a select element */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="fax"],
+input[type="date"],
+input[type="datetime"],
+input[type="month"],
+input[type="password"],
+input[type="time"],
+input[type="url"],
+select {
+  height: 42px; /* keep the inputs and selects the same height */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="fax"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="month"]:focus,
+input[type="password"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #000; /* border color when the field is active */
+  outline: none;
+}
+
+
+.field-group {
+  margin-bottom: 10px;
+}
+
+.field-group,
+.field-row {
+  display: block;
+  float: left;
+  width: 100%;
+  clear: both;
+}
+
+.field-row {
+  margin-bottom: 10px;
+}
+
+.form-field label {
+  margin-bottom: .5em;
+  display: block;
+}
+
+.captcha-img {
+  margin-top: 2.3em;
+}
+
+.form-field {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+@media all and (min-width:768px) {
+	.form-field { padding: 0 5px; }
+
+	.form-field:first-child {
+	  padding-left: 0;
+	}
+
+	.form-field:last-child {
+	  padding-right: 0;
+	}
+
+	.w10 { width: 10%; }
+  .w25 { width: 25%; }
+  .w50 { width: 50%; }
+  .w75 { width: 75%; }
+}
+
+
+.ex-dynamic-content {
+  color: blue;
+}
