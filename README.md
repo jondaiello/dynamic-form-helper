@@ -1,4 +1,4 @@
-# Documenation
+# Documentation
 
 There are a few steps to make this work:
 
