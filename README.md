@@ -79,15 +79,15 @@ In this case, we'll end up with "testDetailsContent"
 
 ## Examples:
 
-- <a href="dist/example.html">Basic Example</a>
-- <a href="dist/simple-content.html">Content Example</a>
-- <a href="dist/simple-fields.html">Group of Fields Example</a>
+- <a href="examples/example.html">Basic Example</a>
+- <a href="examples/simple-content.html">Content Example</a>
+- <a href="examples/simple-fields.html">Group of Fields Example</a>
 
 ## What about multiple instances?
 
 This allows you to pull specific contents with an ID.
 
-<a href="dist/multiple-content.html">View Example</a>
+<a href="examples/multiple-content.html">View Example</a>
 
 Place the following attribute on the options that requires contents to show.
 
@@ -105,7 +105,7 @@ Note: When showing by ID the '#' sign is required at the beginning of the ID nam
 
 This allows you to parse multiple IDs at once.
 
-<a href="dist/multiple-ids-at-once.html">View Example</a>
+<a href="examples/multiple-ids-at-once.html">View Example</a>
 
 Place the following attribute on the options that requires contents to show.
 
